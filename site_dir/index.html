@@ -30,37 +30,57 @@
         </div>
         <form novalidate class="signup__form">
           <label for="firstName" class="visually-hidden">First Name</label>
-          <input
-            type="text"
-            placeholder="First Name"
-            name="firstName"
-            id="firstName"
-            class="signup__input signup__input-firstname"
-          />
+          <div class="signup__input-container" data-field="firstName">
+            <input
+              type="text"
+              placeholder="First Name"
+              name="firstName"
+              id="firstName"
+              class="signup__input"
+              data-field="firstName"
+              required
+            />
+            <span class="signup__input-error" data-field="firstName">First Name cannot be empty</span>
+          </div>
           <label for="lastName" class="visually-hidden">Last Name</label>
-          <input
-            type="text"
-            placeholder="Last Name"
-            name="lastName"
-            id="lastName"
-            class="signup__input signup__input-lastname"
-          />
+          <div class="signup__input-container" data-field="lastName">
+            <input
+              type="text"
+              placeholder="Last Name"
+              name="lastName"
+              id="lastName"
+              class="signup__input"
+              data-field="lastName"
+              required
+            />
+            <span class="signup__input-error" data-field="lastName">Last Name cannot be empty</span>
+          </div>
           <label for="emailAddress" class="visually-hidden">Email Address</label>
-          <input
-            type="email"
-            placeholder="Email Address"
-            name="emailAddress"
-            id="emailAddress"
-            class="signup__input signup__input-email"
-          />
+          <div class="signup__input-container" data-field="emailAddress">
+            <input
+              type="email"
+              placeholder="Email Address"
+              name="emailAddress"
+              id="emailAddress"
+              class="signup__input"
+              data-field="emailAddress"
+              required
+            />
+            <span class="signup__input-error" data-field="emailAddress">Looks like this is not an email</span>
+          </div>
           <label for="password" class="visually-hidden">Password</label>
-          <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            id="password"
-            class="signup__input signup__input-password"
-          />
+          <div class="signup__input-container" data-field="password">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              id="password"
+              class="signup__input"
+              data-field="password"
+              required
+            />
+            <span class="signup__input-error" data-field="password">Password cannot be empty</span>
+          </div>
           <button type="submit" class="signup__btn">Claim Your Free Trial</button>
           <span class="signup__disclaimer"
             >By clicking the button, you are agreeing to our

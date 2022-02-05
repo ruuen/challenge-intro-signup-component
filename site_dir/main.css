@@ -94,15 +94,45 @@ body {
   box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
 }
 
+.signup__input-container {
+  margin: 0 0 0.75rem 0;
+  width: 100%;
+  position: relative;
+}
+.signup__input-container--invalid::before {
+  content: url(./images/icon-error.svg);
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 20%;
+  right: 7.5%;
+}
+
 .signup__input {
   width: 100%;
   padding: 1rem;
-  margin: 0 0 1.15rem 0;
   font-size: 0.9em;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   border: 1px solid #d7d6e6;
   border-radius: 5px;
+}
+.signup__input--invalid {
+  border: 2px solid #ff7a7a;
+}
+
+.signup__input-error {
+  visibility: hidden;
+  display: block;
+  width: fit-content;
+  margin: 0.5rem 0 0 auto;
+  font-style: italic;
+  color: #ff7a7a;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.signup__input-error--visible {
+  visibility: visible;
 }
 
 .signup__btn {
