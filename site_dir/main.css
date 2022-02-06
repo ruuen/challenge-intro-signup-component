@@ -105,7 +105,7 @@ body {
   height: 25px;
   width: 25px;
   top: 20%;
-  right: 7.5%;
+  right: 2rem;
 }
 
 .signup__input {
@@ -149,6 +149,9 @@ body {
   letter-spacing: 1px;
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
 }
+.signup__btn:hover {
+  background: #61d6a3;
+}
 
 .signup__disclaimer {
   display: block;
@@ -161,4 +164,59 @@ body {
 .signup__disclaimer--bold {
   font-weight: 700;
   color: #ff7a7a;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    height: 100vh;
+    background: no-repeat top center/contain url(./images/bg-intro-desktop.png), #ff7a7a;
+  }
+
+  .page-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    text-align: left;
+    padding: 0 0 0 10rem;
+  }
+
+  .content__container {
+    width: 90%;
+  }
+
+  .content__heading {
+    padding: 0;
+    font-size: 3em;
+    line-height: 1.1;
+  }
+
+  .content__body {
+    padding: 2rem 0 0 0;
+    line-height: 1.6;
+  }
+
+  .signup {
+    padding: 0 10rem 0 1rem;
+  }
+
+  .signup__form {
+    padding: 2.5rem;
+  }
+
+  .signup__input-container {
+    margin: 0 0 0.5rem 0;
+  }
+
+  .signup__input::placeholder {
+    padding: 0 0 0 1rem;
+  }
+
+  .signup__input-error {
+    font-size: 0.7em;
+  }
 }
