@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/intro-with-sign-up-component-solution-using-scss-and-bem-lGkhudoc0)
-- Live Site URL: [Netlify](https://rd-challenge-intro-signup.netlify.app/)
+- Live Site URL: [Cloudflare Pages](https://mbr-challenge-intro-signup.pages.dev/)
 
 ## My process
 
@@ -50,5 +50,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@ruuendigital](https://www.frontendmentor.io/profile/ruuendigital)
+- Frontend Mentor - [@ruuen](https://www.frontendmentor.io/profile/ruuen)
 - Twitter - [@maxruuen](https://www.twitter.com/maxruuen)
